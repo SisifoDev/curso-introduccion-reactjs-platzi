@@ -1,11 +1,12 @@
 import React from "react";
 
-function TodoItem({ text, completed }) {
+function TodoItem(props) {
   return (
-    <div>
-      <h1>{text}</h1>
-      <h2>{completed ? "Tarea completada" : "Por completar"}</h2>
-    </div>
+    <li>
+      <span>C</span>
+      <p>{props.text}</p>
+      <span>X</span>
+    </li>
   );
 }
 
